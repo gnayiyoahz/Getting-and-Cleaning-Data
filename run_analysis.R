@@ -27,21 +27,19 @@ y_test <- read.table("UCI HAR Dataset/test/y_test.txt")
 
 activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt")
 features <- read.table("UCI HAR Dataset/features.txt")  
-
 ## ============================================================
 
 
 
 ## ==================== Analyzing Data ====================
-
 # 1. Merge the training and the test sets to create one data set.
 data <- rbind(X_train, X_test)
 
 # 2. Extract only the measurements on the mean and standard deviation for each measurement.
-mean_std <- grep("mean()|std()", features[, 2])
-data <- xdata[, mean_std]
+mean_std <- grepl("mean\\(\\)|std\\(\\)", features[, 2])
+data <- data[, mean_std]
 
-# 4. Appropriately label the data set with descriptive variable names.
+# 4. Appropriately labels the data set with descriptive variable names.
 feature_names <- sapply(features[, 2], function(x) {gsub("[()]", "", x)})
 names(data) <- feature_names[mean_std]
 
