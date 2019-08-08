@@ -1,4 +1,4 @@
-# Code Book
+# The Code Book
 
 ### Study Design
 
