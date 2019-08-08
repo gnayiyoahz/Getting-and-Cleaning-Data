@@ -47,7 +47,7 @@ In this project, we aim to collect, work with, and clean a data set based on the
 
 ### Code Book
 
-- `subject_train`: Training set subjects. ($7352$ obs.)
+- `subject_train`: Training set subjects. ($$7352$$ obs.)
 - `X_train`: Training set data. ($7352$ obs. of  $561$ variables)
 - `y_train`: Training set activities ($7352$ obs.)
 - `subject_test`: Test set subjects. ($2947$ obs.)
