@@ -41,24 +41,24 @@ In this project, we aim to collect, work with, and clean a data set based on the
 
 - All the above tidy data is stored in `data`, a data frame where each row represents an experimental sample and each column represents a variable.
 - From `data`, a second, independent tidy data set is created as `final`. 
-- The final dataset is stored in *'tidy_data.csv'*.
+- The final dataset is stored in *'tidy_data.txt'*.
 
 
 
 ### Code Book
 
-- `subject_train`: Training set subjects. ($$7352$$ obs.)
-- `X_train`: Training set data. ($7352$ obs. of  $561$ variables)
-- `y_train`: Training set activities ($7352$ obs.)
-- `subject_test`: Test set subjects. ($2947$ obs.)
-- `X_test`: Test set data. ($2947$ obs. of  $561$ variables)
-- `y_test`: Test set activities ($2947$ obs.)
-- `activity_labels`: Activity description matching activity numbers to activity names. ($6$ rows of different activities, $2$ columns -- number and name)
-- `features`: Feature description matching feature numbers to feature names. ($561$ rows of different features, $2$ columns -- number and name)
+- `subject_train`: Training set subjects. (7352 obs.)
+- `X_train`: Training set data. (7352 obs. of  561 variables)
+- `y_train`: Training set activities (7352 obs.)
+- `subject_test`: Test set subjects. (2947 obs.)
+- `X_test`: Test set data. (2947 obs. of  561 variables)
+- `y_test`: Test set activities (2947 obs.)
+- `activity_labels`: Activity description matching activity numbers to activity names. (6 rows of different activities, 2 columns -- number and name)
+- `features`: Feature description matching feature numbers to feature names. (561 rows of different features, 2 columns -- number and name)
 - `mean_std`: Logical vector, `TRUE` where the feature is a measurement on the mean or standard deviation. 
 
-- `data`: After combining the data sets, `data` is a data frame of $10299$ obs. of  $68$ variables. $10299 = 7352+2947=$ total number of samples. $68 = 66+2$ where there are $66$ features on the mean or standard deviation and $2$ other columns representing subject and activity.
--  `final`: A tidy dataset with $180$ obs. of  $68$ variables. $180 = 30\times6$ where $30$ is the number of subjects and $6$ is the number of activities, generating $180$ subject-activity combinations. Each row contains the data of a *subject-activity* combination, and each column contains the average of each variable.
+- `data`: After combining the data sets, `data` is a data frame of 10299 obs. of  68 variables. 10299 = 7352+2947= total number of samples. 68 = 66+2 where there are 66 features on the mean or standard deviation and 2 other columns representing subject and activity.
+-  `final`: A tidy dataset with 180 obs. of  68 variables. 180 = 30x6 where 30 is the number of subjects and 6 is the number of activities, generating 180 subject-activity combinations. Each row contains the data of a *subject-activity* combination, and each column contains the average of each variable.
 
 
 
