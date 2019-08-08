@@ -1,2 +1,2 @@
-# Getting-and-Cleaning-Data-
-Tidy data project
+# Getting-and-Cleaning-Data
+
