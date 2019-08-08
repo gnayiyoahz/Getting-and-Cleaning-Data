@@ -27,11 +27,13 @@ y_test <- read.table("UCI HAR Dataset/test/y_test.txt")
 
 activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt")
 features <- read.table("UCI HAR Dataset/features.txt")  
+
 ## ============================================================
 
 
 
 ## ==================== Analyzing Data ====================
+
 # 1. Merge the training and the test sets to create one data set.
 data <- rbind(X_train, X_test)
 
