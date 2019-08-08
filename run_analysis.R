@@ -41,7 +41,7 @@ data <- rbind(X_train, X_test)
 mean_std <- grep("mean()|std()", features[, 2])
 data <- xdata[, mean_std]
 
-# 4. Appropriately labels the data set with descriptive variable names.
+# 4. Appropriately label the data set with descriptive variable names.
 feature_names <- sapply(features[, 2], function(x) {gsub("[()]", "", x)})
 names(data) <- feature_names[mean_std]
 
