@@ -31,7 +31,7 @@ You should create one R script called run_analysis.R that does the following.
 ### Repository Contents
 
 - [run_analysis.R](run_analysis.R) contains the essential code written in R to download, read, analyze and reshape the raw data.
-- [tidy.csv](tidy.csv) is the output tidy data set.
+- [tidy_data.txt](tidy_data.txt) is the output tidy data set in txt format. [tidy_data.csv](tidy_data.csv) is an alternative output in csv format.
 - [The Code Book](CodeBook.md) contains the details about the data-processing steps. 
 
 
