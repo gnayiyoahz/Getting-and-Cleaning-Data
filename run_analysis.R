@@ -85,7 +85,11 @@ library("reshape2")
 data_edit <- melt(data, (id.vars=c("subject","activity")))
 final <- dcast(data_edit, subject + activity ~ variable, mean)
 names(final)[-c(1:2)] <- paste("mean of: ", names(final)[-c(1:2)])
-write.csv(final, "tidy_data.csv",row.names=FALSE)
+write.table(final, "tidy_data.txt", row.name=FALSE)
+# the final dataset is in "tidy_data.txt"
+
+# An alternative
+# write.csv(final, "tidy_data.csv", row.names=FALSE)
 # the final dataset is in "tidy_data.csv"
 
 ## ===============================================================================================
